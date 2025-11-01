@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alma Granel - Productos Deshidratados Naturales | Ciudad Quesada, Costa Rica</title>
+    <meta name="description" content="Alma Granel - Tu tienda online de productos deshidratados, semillas y frutas deshidratadas en Costa Rica. Entrega a todo el país desde Ciudad Quesada.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-seedling"></i>
+                <span>Alma Granel</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+                <button class="cart-btn" id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">La esencia de la naturaleza, en tu mesa</h1>
+            <p class="hero-subtitle">Descubre nuestra selección premium de productos deshidratados, semillas y frutas deshidratadas. Calidad natural entregada directamente a tu hogar en todo Costa Rica.</p>
+            <button class="cta-button" onclick="scrollToProducts()">Ver Productos</button>
+        </div>
+        <div class="hero-image">
+            <img src="imgs/healthy_mixed_dried_fruits_nuts_seeds_trail_mix.jpg" alt="Productos naturales Alma Granel">
+        </div>
+    </section>
+
+    <!-- Categories Filter -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="category-filters">
+                <button class="category-btn active" data-category="todos">Todos</button>
+                <button class="category-btn" data-category="frutas">Frutas Deshidratadas</button>
+                <button class="category-btn" data-category="semillas">Semillas</button>
+                <button class="category-btn" data-category="frutos-secos">Frutos Secos</button>
+                <button class="category-btn" data-category="mezclas">Mezclas Especiales</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products-section">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Alma Granel</h2>
+                    <p class="about-description">
+                        Desde Ciudad Quesada, Costa Rica, nacemos con la misión de llevar a tu mesa los sabores más puros y naturales del país. 
+                        Nos especializamos en productos deshidratados de la más alta calidad, cuidadosamente seleccionados para preservar sus 
+                        nutrientes y sabores únicos.
+                    </p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h3>100% Natural</h3>
+                                <p>Sin conservantes ni aditivos artificiales</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <div>
+                                <h3>Entrega Nacional</h3>
+                                <p>Enviamos a todo Costa Rica</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h3>Calidad Premium</h3>
+                                <p>Selección cuidadosa de productos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="imgs/assorted_dried_fruits_raisins_apricots_dates_catalog.jpg" alt="Productos Alma Granel">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Ciudad Quesada, San Carlos<br>Costa Rica</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+506 2460-0000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>+506 2460-0000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horarios</h3>
+                            <p>Lunes a Viernes: 8:00 AM - 6:00 PM<br>Sábados: 8:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-form">
+                    <h3>Realizar Pedido</h3>
+                    <form id="order-form">
+                        <div class="form-group">
+                            <label for="customer-name">Nombre Completo</label>
+                            <input type="text" id="customer-name" name="customer-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="customer-phone">Teléfono</label>
+                            <input type="tel" id="customer-phone" name="customer-phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="customer-email">Correo Electrónico</label>
+                            <input type="email" id="customer-email" name="customer-email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="delivery-address">Dirección de Entrega</label>
+                            <textarea id="delivery-address" name="delivery-address" rows="3" required placeholder="Dirección completa incluyendo provincia, cantón y distrito"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="order-notes">Notas del Pedido</label>
+                            <textarea id="order-notes" name="order-notes" rows="3" placeholder="Instrucciones especiales para la entrega"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Pedido
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Tu Carrito</h3>
+                <button class="close-cart" id="close-cart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: ₡<span id="cart-total">0</span></strong>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">
+                    <i class="fas fa-check"></i>
+                    Proceder al Pedido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+    <div class="success-message" id="success-message">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>¡Pedido Realizado!</h3>
+            <p>Hemos recibido tu pedido. Te contactaremos pronto para confirmar los detalles de entrega.</p>
+            <button onclick="closeSuccessMessage()">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>Alma Granel</span>
+                    </div>
+                    <p>Productos naturales deshidratados de Costa Rica para todo el país.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#productos">Productos</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Ciudad Quesada, Costa Rica</p>
+                    <p><i class="fas fa-phone"></i> +506 2460-0000</p>
+                    <p><i class="fab fa-whatsapp"></i> +506 2460-0000</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alma Granel. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
